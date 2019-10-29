@@ -1,3 +1,18 @@
+#............IMPORTANT..........#
+
+# 1. Create project from PyCharm as a Flask project directly (automatically handle dependency)
+# 2. Go to Project 'Settings' set Python interpreter as 3.7.x
+# 3. Install SQLAlchemy from the project dependency in PyCharm
+# 4. Instal Flask-sqlalchemy from the project dependency in PyCharm
+# 5. Run this following two lines in the python console to create the database
+#   >>> from searchManager import db
+#   >>> db.create_all()
+
+#......................................#
+
+
+
+
 import os
 
 from flask import Flask
