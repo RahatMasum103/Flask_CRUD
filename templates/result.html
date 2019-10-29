@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Search Result</h1>
+    <table>
+{#      {% for person in result %}#}
+        <tr>
+          <td>
+            {{result.id}}
+          </td>
+            <td>
+            {{result.name}}
+          </td>
+        </tr>
+{#      {% endfor %}#}
+    </table>
+<br>
+<form method="POST" action="/search"> {# this action will go into the 'app.py' and execute 'add' method#}
+    <input type="submit" value="Home">
+    </form>
+</body>
+</html>

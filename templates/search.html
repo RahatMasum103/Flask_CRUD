@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+    <h1>Hello Flask Framework with Search</h1>
+
+    <form method="POST" action="/result"> {# this action will go into the 'app.py' and execute 'add' method#}
+      <input type="text" name="name">
+      <input type="submit" value="Search">
+    </form>
+
+    <br>
+    <h1>Employee List</h1>
+    <table>
+      {% for person in people %}
+        <tr>
+          <td>
+            {{person.id}}
+          </td>
+            <td>
+            {{person.name}}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+<br>
+    <h1>Book List</h1>
+    <table>
+      {% for book in books %}
+        <tr>
+          <td>
+            {{book.id}}
+          </td>
+            <td>
+            {{book.title}}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+</body>
+</html>
